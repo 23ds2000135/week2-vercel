@@ -6,5 +6,5 @@ app = FastAPI ()
 @app.get("/")
 def index ():
     return {
-                "message": "Welcome to the First FastAPI App!",
+                "message": "Welcome to the First FastAPI App!"
             }
