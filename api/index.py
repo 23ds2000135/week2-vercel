@@ -23,7 +23,7 @@ app.add_middleware(
 with open("q-vercel-python.json") as f:
     data = json.load(f)
 
-@app.get("/api/params")
+@app.get("/")
 async def get_marks(request: Request):
     names = request.query_params.getlist("name")
     marks = [data.get(name, 0) for name in names]
