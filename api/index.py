@@ -27,4 +27,4 @@ def api (request: Request):
         data.append({"name": name, "marks": marks})
         return {"message": "Data added successfully."}
     
-    return {"data": data}
+    return {"marks": marks}
